@@ -1,0 +1,167 @@
+@font-face {
+    font-family: light;
+    src: url('../fonts/Lato-Light.woff');
+}
+@font-face {
+    font-family: regular;
+    src: url('../fonts/Lato-Regular.woff');
+}
+
+.hFont {
+    font-family: regular, serif;
+}
+
+body {
+    background-color: #3DA4E8;
+    color: #ffffff;
+}
+
+.container {
+    margin-left: 80px;
+    margin-top:10px;
+    margin-bottom:10px;
+    position: relative;
+}
+
+.title {
+    font-family: regular, serif;
+    white-space: nowrap;
+}
+
+.popular {
+    background-color: #45abee;
+    border-radius: 2px;
+    font-family: regular, serif;
+    white-space: nowrap;
+    width: 45%;
+    height: 30px;
+}
+
+
+.colour-title{
+    white-space: nowrap;
+    font-family: light, serif;
+}
+
+
+@media screen and (min-width: 768px) {
+    /* tablets and desktop */
+    .title {
+        font-size: 2.4vw;
+    }
+    .pImage {
+        height: 130px;
+    }
+    .popularText {
+        display: inline-block;
+        font-size: 1vw;
+        margin-left: .8vw;
+    }
+    .paletteBox {
+        height: 155px
+    }
+
+    .lastUpdated {
+        position: absolute;
+        top: -10px;
+        right: 90px;
+    }
+    .colour-title{
+        font-size: 4.4vw;
+        padding-bottom: 5px;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width:702px) {
+    /* phones */
+
+    .colour-title{
+        font-size: 4.4vw;
+    }
+    .title {
+        font-size: 2.0vw;
+    }
+    .paletteBox {
+        height: 120px
+    }
+    .by-who{
+        font-size: 1.0vw;
+        white-space: nowrap;
+    }
+    .popular {
+        width: 60%;
+    }
+
+    .lastUpdated {
+        padding-bottom: 20px;
+    }
+
+    .popularText {
+        display: inline-block;
+        font-size: 1.0vw;
+        margin-left: 5px;
+    }
+}
+@media screen and (max-width:701px) and (min-width:544px) {
+    /* phones */
+
+    .colour-title{
+        font-size: 6.4vw;
+    }
+    .title {
+        font-size: 2.5vw;
+    }
+    .paletteBox {
+        height: 120px
+    }
+    .by-who{
+        font-size: 1.7vw;
+        white-space: nowrap;
+    }
+    .popular {
+        width: 80%;
+    }
+
+    .popularText {
+        display: inline-block;
+        font-size: 1.7vw;
+        margin-left: 2px;
+    }
+}
+
+@media screen and (max-width: 543px) and (orientation: portrait) {
+    /* portrait phones */
+    .container {
+        margin-left: 20px;
+    }
+
+    .colour-title{
+        font-size: 9.4vw;
+    }
+    .title {
+        font-size: 5.3vw;
+    }
+    .paletteBox {
+        height: 120px
+    }
+    .by-who{
+        font-size: 2.8vw;
+        padding-bottom: 3px;
+    }
+    .popular{
+        margin-top: 10px;
+        max-width: 60%;
+
+    }
+
+    .lastUpdated {
+        padding-bottom: 20px;
+    }
+
+    .popularText {
+        display: inline-block;
+        font-size: 2.6vw;
+        margin-left: 3px;
+    }
+}
